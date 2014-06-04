@@ -186,7 +186,7 @@ def get_players(): # choose whether to play single player or not
     if check == 'n':
         get_players()
 
-def get_words(): # download Tom25's word list from github if you don't have a wordlist already.
+def get_words(): # download word list if you don't have a wordlist already.
     import urllib
     from random import choice
     try:
