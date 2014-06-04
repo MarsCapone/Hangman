@@ -1,3 +1,4 @@
+#!/usr/bin/env python
 '''
 -----------------------------------------
   _____                                 
@@ -21,23 +22,6 @@ ______                _
 Hangman Game
 
 Python 2.7.6
-
-samsondanziger.com
-
------------------------------------------
-
-Changelog
-
-#v2.0
-Added single player support
-Added section to import a wordlist for computer to use
-Added choices at each stage to check correctness
-Tidied interface
-Fixed known bugs
-
-#v1.0
-Base hangman release
-Many bugs
 
 -----------------------------------------
 '''
@@ -197,7 +181,6 @@ def get_words(): # download word list if you don't have a wordlist already.
         If you would like this program to fetch a list of words, press enter.
         """) # if the wordlist doesn't exist, ask for an input wordlist, or fetch one to the same folder.
         if choose == '':
-            # get a word list
             file = urllib.urlretrieve('http://www.mieliestronk.com/corncob_lowercase.txt', 'wordlist.txt')
             file = open('wordlist.txt','r').read()
         else:
@@ -220,11 +203,12 @@ def setupgame():
     global word
     global chances
     global ascii
+    ascii = False
     get_players() # get the number of players
     print
     print
     if players == 1:
-        word = get_words() # if the computer chooses a word
+        word = get_words()[:-1] # if the computer chooses a word
         chances = 8 # you get 8 chances
         ascii = True # ascii art is on
     else:
@@ -299,7 +283,7 @@ def main(): # main program
             print "You have " +str(chances) + " chances remaining."
             print "Guessed letters: " + ' '.join(guessed_char)
             print "Your attempt:    " + ''.join(guessed_correct)
-            print '\n' * 10
+            print '\n' * 20
     if win == False:
         print "You didn't win. Better luck next time."
         print "The word was: " + word
