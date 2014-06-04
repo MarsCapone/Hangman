@@ -1,4 +1,5 @@
 #!/usr/bin/env python
+
 '''
 -----------------------------------------
   _____                                 
@@ -22,6 +23,23 @@ ______                _
 Hangman Game
 
 Python 2.7.6
+
+samsondanziger.com
+
+-----------------------------------------
+
+Changelog
+
+#v2.0
+Added single player support
+Added section to import a wordlist for computer to use
+Added choices at each stage to check correctness
+Tidied interface
+Fixed known bugs
+
+#v1.0
+Base hangman release
+Many bugs
 
 -----------------------------------------
 '''
