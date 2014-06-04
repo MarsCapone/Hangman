@@ -1,5 +1,4 @@
 #!/usr/bin/env python
-
 '''
 -----------------------------------------
   _____                                 
@@ -43,6 +42,7 @@ Many bugs
 
 -----------------------------------------
 '''
+
 
 
 word = ''
@@ -305,14 +305,18 @@ def main(): # main program
     if win == False:
         print "You didn't win. Better luck next time."
         print "The word was: " + word
+        print
     elif win == True:
         print "Well done, you have won the game"
         print "The word is " + ''.join(guessed_correct)
-
+        print
+        
 while True: # run forever
     main()
+    print
     c = raw_input("Play again? y/n: ").lower() # check to play again
     if c == 'y':
-        continue
+        main()
+        print
     else:
         break
