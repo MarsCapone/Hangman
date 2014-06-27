@@ -116,7 +116,7 @@ def Hangman():
         char = raw_input(" Guess a letter: ").lower()
         if not char.isalpha() or len(char) > 1: # Either they have entered multiple letters, or not letters.
             print " Please enter ONE LETTER only.\n"
-            guess_character(word, chances, ascii, guessed_char, guessed_correct)
+            guess_character(word, chances, guessed_char, guessed_correct)
             
         if char in guessed_char: # They have already guessed this letter.
             print " You have already guessed this letter.\n"
