@@ -139,7 +139,7 @@ def Hangman():
     word, chances, ascii = get_variables(args)
     guessed_char = []
     guessed_correct = ["-"]*len(word)
-    hangman = open("ascii_hangman.txt", "r").read()[96:].split(",") # Hangman ascii art is in a file for easy editing. 
+    hangman = open("ascii_hangman.txt", "r").read().split(",") # Hangman ascii art is in a file for easy editing. 
     if ascii:
         chances = len(hangman)
     
