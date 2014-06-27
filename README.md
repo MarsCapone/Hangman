@@ -11,7 +11,7 @@ There is a single player mode where the computer will choose a random word, or a
 On the two player mode you can choose whether to have ascii art hangman on or off.
 
 Alternatively run hangman_cli.py.
-This is a hangman game that can be called from a command line with different options. Call "hangman_cli.py -h" for the help file.
+This is a hangman game that can be called from a command line with different options. Call `hangman_cli.py -h` for the help file.
 This has all the same options as the other hangman game, but I think the implementation is neater.
 
 Requires Python 2.7
