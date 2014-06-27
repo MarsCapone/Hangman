@@ -145,7 +145,7 @@ def Hangman():
     
     def print_hangman(remaining_chances): # Prints each hangman depending on remaining chances.
         try:
-            hangman = hangman = open("ascii_hangman.txt", "r").read()[96:].split(",")
+            hangman = hangman = open("ascii_hangman.txt", "r").read().split(",")
             l = len(hangman)
             index = l - remaining_chances
             sketch = hangman[index].split('\n')
