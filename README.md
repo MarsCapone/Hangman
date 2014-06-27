@@ -14,6 +14,10 @@ Alternatively run hangman_cli.py.
 This is a hangman game that can be called from a command line with different options. Call `hangman_cli.py -h` for the help file.
 This has all the same options as the other hangman game, but I think the implementation is neater.
 
+***
+hangman\_cli.py uses ascii\_hangman.txt, a file containing the hangman ascii art. Feel free to edit this file, but leave the hangmen separated by commas.
+***
+
 Requires Python 2.7
 
 The program asks for a word list, if you don't have one, it will download the one found here: http://www.mieliestronk.com/corncob_lowercase.txt
